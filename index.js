@@ -27,11 +27,11 @@ function appendCat(){
 }
 
 function removeLastCat(){
-    const remove = cats.splice(2);
+    const remove = cats.slice(0,2);
     return remove;
 }
 
 function removeFirstCat(){
-    const first = cats.splice(1);
+    const first = cats.slice(1, 3);
     return first;
 }
